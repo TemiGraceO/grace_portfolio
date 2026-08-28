@@ -521,6 +521,9 @@ textarea {
     flex-direction: row;
     max-width: none;
   }
+  hr{
+    display: none;
+  }
 
   .button {
     padding-left: 22px;

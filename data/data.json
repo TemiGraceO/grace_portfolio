@@ -1,0 +1,80 @@
+{
+  "profile": {
+    "name": "Grace Temitayo Olorunfemi",
+    "role": "Computer Engineering Student and Technology Builder",
+    "email": "graceolorunfemi96@gmail.com",
+    "location": "Zaria, Kaduna State, Nigeria"
+  },
+  "education": [
+    {
+      "institution": "Ahmadu Bello University, Zaria",
+      "qualification": "B.Eng. Computer Engineering",
+      "status": "Final-year student"
+    }
+  ],
+  "skills": [
+    {
+      "title": "Programming",
+      "items": [
+        "C",
+        "C++",
+        "Python",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "AI and Edge AI",
+      "items": [
+        "Computer vision",
+        "Model deployment",
+        "Inference"
+      ]
+    },
+    {
+      "title": "Embedded Systems",
+      "items": [
+        "GPIO",
+        "Linux",
+        "Cameras",
+        "Hardware integration"
+      ]
+    },
+    {
+      "title": "Web Development",
+      "items": [
+        "HTML",
+        "CSS",
+        "React",
+        "FastAPI",
+        "Electron"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "AI Medical Diagnostic Device",
+      "category": "AI + Embedded",
+      "technologies": [
+        "Python",
+        "React",
+        "FastAPI",
+        "Edge AI"
+      ]
+    },
+    {
+      "title": "Lex Xperience",
+      "category": "Web",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    }
+  ],
+  "hobbies": [
+    "Learning new technology",
+    "Building projects",
+    "Problem solving",
+    "Exploring ideas"
+  ]
+}

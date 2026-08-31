@@ -6,36 +6,35 @@
   <meta name="description" content="Selected projects by Grace Temitayo Olorunfemi.">
   <link rel="icon" type="image/png" href="assets/images/grace.png">
   <link rel="stylesheet" href="assets/style.css">
-  <script src="assets/script.js" defer></script>
-  <title>Projects | Grace Temitayo Olorunfemi</title>
+  <title>Projects</title>
 </head>
 <body>
 
-  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <input type="checkbox" id="nav-open" class="nav-open">
 
-  <header class="mobile-header">
-    <a href="index.html" class="mobile-brand">Grace</a>
-    <label for="menu-toggle" class="menu-button" aria-label="Toggle navigation" aria-controls="site-navigation">
+  <header class="phone-bar">
+    <a href="index.html" class="phone-brand">Grace</a>
+    <label for="nav-open" class="ham" aria-label="Toggle navigation" aria-controls="primary-nav">
       <span></span><span></span><span></span>
     </label>
   </header>
 
-  <aside class="sidebar">
-    <div class="sidebar-top">
-      <nav id="site-navigation" class="nav" aria-label="Main navigation">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About me</a>
-        <a href="education.html" class="nav-link">Education</a>
-        <a href="skills.html" class="nav-link">Skills</a>
-        <a href="projects.html" class="nav-link active">Projects</a>
-        <a href="gallery.html" class="nav-link">Gallery</a>
-        <a href="hobbies.html" class="nav-link">Hobbies</a>
-        <a href="cv.html" class="nav-link">CV</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+  <aside class="side-nav">
+    <div class="side-nav-top">
+      <nav id="primary-nav" class="links" aria-label="Main navigation">
+        <a href="index.html" class="link">Home</a>
+        <a href="about.html" class="link">About me</a>
+        <a href="education.html" class="link">Education</a>
+        <a href="skills.html" class="link">Skills</a>
+        <a href="projects.html" class="link active">Projects</a>
+        <a href="gallery.html" class="link">Gallery</a>
+        <a href="hobbies.html" class="link">Hobbies</a>
+        <a href="cv.html" class="link">CV</a>
+        <a href="contact.html" class="link">Contact</a>
       </nav>
     </div>
-    <div class="sidebar-bottom">
-      <div class="socials">
+    <div class="side-nav-base">
+      <div class="peer-links">
         <a href="#" aria-label="GitHub profile">GitHub</a>
         <a href="#" aria-label="LinkedIn profile">LinkedIn</a>
         <a href="mailto:graceolorunfemi96@gmail.com" aria-label="Email Grace">Email</a>
@@ -43,32 +42,31 @@
     </div>
   </aside>
 
-  <main id="main-content" class="main-content">
-    <section id="projects" class="section page-section">
-      <div class="section-heading">
-        <h2 class="eyebrow">Projects</h2>
+  <main id="main" class="main">
+    <section id="projects" class="wrap page-block">
+      <div class="head-block">
+        <h2 class="overline">Projects</h2>
         <h1>Things I've built.</h1>
       </div>
-      <div class="projects-grid">
-        <article class="project-card featured">
-          <div class="project-top"><span class="project-tag">AI + Embedded</span><span class="project-index">01</span></div>
+      <div class="work-board">
+        <article class="work-tile is-featured">
+          <div class="work-top"><span class="micro-label">AI + Embedded</span><span class="work-num">01</span></div>
           <h2>AI Medical Diagnostic Device</h2>
           <p>A portable diagnostic system combining embedded hardware, microscopy, computer vision and a desktop interface for automated malaria and stool analysis.</p>
-          <div class="tech-list"><span>Python</span><span>React</span><span>FastAPI</span><span>Edge AI</span></div>
+          <div class="stack"><span>Python</span><span>React</span><span>FastAPI</span><span>Edge AI</span></div>
         </article>
-        <article class="project-card">
-          <div class="project-top"><span class="project-tag">Web</span><span class="project-index">02</span></div>
+        <article class="work-tile" id="work-2">
+          <div class="work-top"><span class="micro-label">Web</span><span class="work-num">02</span></div>
           <h2>Lex Xperience</h2>
           <p>A responsive event website with registration, conditional form fields and Paystack payment integration.</p>
-          <div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <div class="stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
         </article>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="foot">
     <span>© 2026 Grace Temitayo Olorunfemi</span>
-    <span>Built with HTML, CSS and JavaScript</span>
   </footer>
 </body>
 </html>

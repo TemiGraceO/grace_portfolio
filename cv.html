@@ -6,36 +6,35 @@
   <meta name="description" content="Curriculum Vitae of Grace Temitayo Olorunfemi.">
   <link rel="icon" type="image/png" href="assets/images/grace.png">
   <link rel="stylesheet" href="assets/style.css">
-  <script src="assets/script.js" defer></script>
-  <title>CV | Grace Temitayo Olorunfemi</title>
+  <title>CV</title>
 </head>
 <body>
 
-  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <input type="checkbox" id="nav-open" class="nav-open">
 
-  <header class="mobile-header">
-    <a href="index.html" class="mobile-brand">Grace</a>
-    <label for="menu-toggle" class="menu-button" aria-label="Toggle navigation" aria-controls="site-navigation">
+  <header class="phone-bar">
+    <a href="index.html" class="phone-brand">Grace</a>
+    <label for="nav-open" class="ham" aria-label="Toggle navigation" aria-controls="primary-nav">
       <span></span><span></span><span></span>
     </label>
   </header>
 
-  <aside class="sidebar">
-    <div class="sidebar-top">
-      <nav id="site-navigation" class="nav" aria-label="Main navigation">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About me</a>
-        <a href="education.html" class="nav-link">Education</a>
-        <a href="skills.html" class="nav-link">Skills</a>
-        <a href="projects.html" class="nav-link">Projects</a>
-        <a href="gallery.html" class="nav-link">Gallery</a>
-        <a href="hobbies.html" class="nav-link">Hobbies</a>
-        <a href="cv.html" class="nav-link active">CV</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+  <aside class="side-nav">
+    <div class="side-nav-top">
+      <nav id="primary-nav" class="links" aria-label="Main navigation">
+        <a href="index.html" class="link">Home</a>
+        <a href="about.html" class="link">About me</a>
+        <a href="education.html" class="link">Education</a>
+        <a href="skills.html" class="link">Skills</a>
+        <a href="projects.html" class="link">Projects</a>
+        <a href="gallery.html" class="link">Gallery</a>
+        <a href="hobbies.html" class="link">Hobbies</a>
+        <a href="cv.html" class="link active">CV</a>
+        <a href="contact.html" class="link">Contact</a>
       </nav>
     </div>
-    <div class="sidebar-bottom">
-      <div class="socials">
+    <div class="side-nav-base">
+      <div class="peer-links">
         <a href="#" aria-label="GitHub profile">GitHub</a>
         <a href="#" aria-label="LinkedIn profile">LinkedIn</a>
         <a href="mailto:graceolorunfemi96@gmail.com" aria-label="Email Grace">Email</a>
@@ -43,26 +42,25 @@
     </div>
   </aside>
 
-  <main id="main-content" class="main-content">
-    <section id="cv" class="section page-section cv-section">
-      <div class="section-heading">
-        <h2 class="eyebrow">CV</h2>
+  <main id="main" class="main">
+    <section id="cv" class="wrap page-block cv-block">
+      <div class="head-block">
+        <h2 class="overline">CV</h2>
         <h1>Want the full story?</h1>
       </div>
-      <div class="cv-box">
+      <div class="cv-panel">
         <div>
-          <p class="card-kicker">Curriculum Vitae</p>
+          <p class="micro-label">Curriculum Vitae</p>
           <h2>My experience, education and projects.</h2>
-          <p class="muted">Open my CV for a detailed overview of my background and work.</p>
+          <p class="dim">Open my CV for a detailed overview of my background and work.</p>
         </div>
-        <a class="button button-primary" href="assets/documents/Grace.pdf" target="_blank" rel="noopener">View CV</a>
+        <a class="btn btn-solid" href="assets/documents/Grace.pdf" target="_blank" rel="noopener">View CV</a>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="foot">
     <span>© 2026 Grace Temitayo Olorunfemi</span>
-    <span>Built with HTML, CSS and JavaScript</span>
   </footer>
 </body>
 </html>

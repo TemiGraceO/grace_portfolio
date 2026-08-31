@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photo gallery of Grace Temitayo Olorunfemi — competitions, projects and moments along the way.">
+  <link rel="icon" type="image/png" href="assets/images/grace.png">
+  <link rel="stylesheet" href="assets/style.css">
+  <title>Gallery | Grace Temitayo Olorunfemi</title>
+</head>
+<body>
+
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+  <header class="mobile-header">
+    <a href="index.html" class="mobile-brand">Grace</a>
+    <label for="menu-toggle" class="menu-button" aria-label="Toggle navigation" aria-controls="site-navigation">
+      <span></span><span></span><span></span>
+    </label>
+  </header>
+
+  <aside class="sidebar">
+    <div class="sidebar-top">
+      <nav id="site-navigation" class="nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About me</a>
+        <a href="education.html" class="nav-link">Education</a>
+        <a href="skills.html" class="nav-link">Skills</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="hobbies.html" class="nav-link">Hobbies</a>
+        <a href="cv.html" class="nav-link">CV</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+    </div>
+    <div class="sidebar-bottom">
+      <div class="socials">
+        <a href="#" aria-label="GitHub profile">GitHub</a>
+        <a href="#" aria-label="LinkedIn profile">LinkedIn</a>
+        <a href="mailto:graceolorunfemi96@gmail.com" aria-label="Email Grace">Email</a>
+      </div>
+    </div>
+  </aside>
+
+  <main id="main-content" class="main-content">
+    <section id="gallery" class="section1 page-section">
+      <div class="section-heading">
+        <h2 class="eyebrow">Gallery</h2>
+        <h1>Moments along the way.</h1>
+      </div>
+
+      <!-- CSS-only filter: radios drive visibility via :checked ~ sibling selectors, no JS -->
+      <input type="radio" name="filter" id="filter-all" class="filter-radio" checked>
+      <input type="radio" name="filter" id="filter-competitions" class="filter-radio">
+      <input type="radio" name="filter" id="filter-projects" class="filter-radio">
+      <input type="radio" name="filter" id="filter-teaching" class="filter-radio">
+      <input type="radio" name="filter" id="filter-campus" class="filter-radio">
+
+      <div class="gallery-filters" role="group" aria-label="Filter gallery by category">
+        <label for="filter-all" class="filter-btn">All</label>
+        <label for="filter-competitions" class="filter-btn">Competitions</label>
+        <label for="filter-projects" class="filter-btn">Projects</label>
+        <label for="filter-teaching" class="filter-btn">Teaching</label>
+        <label for="filter-campus" class="filter-btn">Campus</label>
+      </div>
+
+      <div class="gallery-grid">
+        <a href="#lightbox-1" class="gallery-item" data-category="competitions" aria-label="Open image: TeamABU2026 prep session">
+          <img src="/assets/images/main.jpg" alt="TeamABU2026 preparation session" loading="lazy">
+          <div class="gallery-caption"><span>Competitions</span><strong>TeamABU2026 Team Picture</strong></div>
+        </a>
+
+        <a href="#lightbox-2" class="gallery-item" data-category="competitions" aria-label="Open image: Competition day">
+          <img src="https://picsum.photos/seed/teamabu2/600/750" alt="On stage at a robotics and engineering competition" loading="lazy">
+          <div class="gallery-caption"><span>Competitions</span><strong>Competition day</strong></div>
+        </a>
+
+        <a href="#lightbox-3" class="gallery-item" data-category="projects" aria-label="Open image: ParaVision hardware build">
+          <img src="/assets/images/test.jpg" alt="Assembling the ParaVision edge-AI hardware" loading="lazy">
+          <div class="gallery-caption"><span>Projects</span><strong>ParaVision hardware build</strong></div>
+        </a>
+
+        <a href="#lightbox-4" class="gallery-item" data-category="teaching" aria-label="Open image: Summer Coding for Kids">
+          <img src="https://picsum.photos/seed/teaching1/600/750" alt="Teaching the Web Programming track at Compeng Summer Coding for Kids" loading="lazy">
+          <div class="gallery-caption"><span>Teaching</span><strong>Summer Coding for Kids</strong></div>
+        </a>
+
+        <a href="#lightbox-5" class="gallery-item" data-category="projects" aria-label="Open image: Late-night debugging">
+          <img src="/assets/images/try.jpg" alt="Troubleshooting late into the night" loading="lazy">
+          <div class="gallery-caption"><span>Projects</span><strong>Late-night troubleshooting</strong></div>
+        </a>
+
+        <a href="#lightbox-6" class="gallery-item" data-category="campus" aria-label="Open image: Life at ABU Zaria">
+          <img src="https://picsum.photos/seed/abu1/600/750" alt="Around campus at Ahmadu Bello University, Zaria" loading="lazy">
+          <div class="gallery-caption"><span>Campus</span><strong>Life at ABU Zaria</strong></div>
+        </a>
+
+        <a href="#lightbox-7" class="gallery-item" data-category="competitions" aria-label="Open image: Award moment">
+          <img src="/assets/images/award.jpg" alt="Receiving an award or certificate" loading="lazy">
+          <div class="gallery-caption"><span>Competitions</span><strong>Award</strong></div>
+        </a>
+
+        <a href="#lightbox-8" class="gallery-item" data-category="teaching" aria-label="Open image: With the students">
+          <img src="https://picsum.photos/seed/students1/600/750" alt="With students from the coding class" loading="lazy">
+          <div class="gallery-caption"><span>Teaching</span><strong>With the students</strong></div>
+        </a>
+      </div>
+
+      <!-- CSS-only lightbox: each target is shown via :target when its #lightbox-N link is active -->
+      <div class="lightbox-target" id="lightbox-1">
+        <a href="#gallery" class="lightbox-backdrop" aria-label="Close image"></a>
+        <div class="lightbox-inner">
+          <img src="https://picsum.photos/seed/teamabu1/1000/1250" alt="TeamABU2026 preparation session">
+          <p class="lightbox-caption">TeamABU2026 prep session</p>
+          <a href="#gallery" class="lightbox-close" aria-label="Close image">&times;</a>
+        </div>
+      </div>
+
+      <div class="lightbox-target" id="lightbox-2">
+        <a href="#gallery" class="lightbox-backdrop" aria-label="Close image"></a>
+        <div class="lightbox-inner">
+          <img src="https://picsum.photos/seed/teamabu2/1000/1250" alt="On stage at a robotics and engineering competition">
+          <p class="lightbox-caption">Competition day</p>
+          <a href="#gallery" class="lightbox-close" aria-label="Close image">&times;</a>
+        </div>
+      </div>
+
+      <div class="lightbox-target" id="lightbox-3">
+        <a href="#gallery" class="lightbox-backdrop" aria-label="Close image"></a>
+        <div class="lightbox-inner">
+          <img src="https://picsum.photos/seed/paravision1/1000/1250" alt="Assembling the ParaVision edge-AI hardware">
+          <p class="lightbox-caption">ParaVision hardware build</p>
+          <a href="#gallery" class="lightbox-close" aria-label="Close image">&times;</a>
+        </div>
+      </div>
+
+      <div class="lightbox-target" id="lightbox-4">
+        <a href="#gallery" class="lightbox-backdrop" aria-label="Close image"></a>
+        <div class="lightbox-inner">
+          <img src="https://picsum.photos/seed/teaching1/1000/1250" alt="Teaching the Web Programming track at Compeng Summer Coding for Kids">
+          <p class="lightbox-caption">Summer Coding for Kids</p>
+          <a href="#gallery" class="lightbox-close" aria-label="Close image">&times;</a>
+        </div>
+      </div>
+
+      <div class="lightbox-target" id="lightbox-5">
+        <a href="#gallery" class="lightbox-backdrop" aria-label="Close image"></a>
+        <div class="lightbox-inner">
+          <img src="https://picsum.photos/seed/coding1/1000/1250" alt="Debugging code late into the night">
+          <p class="lightbox-caption">Late-night debugging</p>
+          <a href="#gallery" class="lightbox-close" aria-label="Close image">&times;</a>
+        </div>
+      </div>
+
+      <div class="lightbox-target" id="lightbox-6">
+        <a href="#gallery" class="lightbox-backdrop" aria-label="Close image"></a>
+        <div class="lightbox-inner">
+          <img src="https://picsum.photos/seed/abu1/1000/1250" alt="Around campus at Ahmadu Bello University, Zaria">
+          <p class="lightbox-caption">Life at ABU Zaria</p>
+          <a href="#gallery" class="lightbox-close" aria-label="Close image">&times;</a>
+        </div>
+      </div>
+
+      <div class="lightbox-target" id="lightbox-7">
+        <a href="#gallery" class="lightbox-backdrop" aria-label="Close image"></a>
+        <div class="lightbox-inner">
+          <img src="https://picsum.photos/seed/award1/1000/1250" alt="Receiving an award or certificate">
+          <p class="lightbox-caption">Award moment</p>
+          <a href="#gallery" class="lightbox-close" aria-label="Close image">&times;</a>
+        </div>
+      </div>
+
+      <div class="lightbox-target" id="lightbox-8">
+        <a href="#gallery" class="lightbox-backdrop" aria-label="Close image"></a>
+        <div class="lightbox-inner">
+          <img src="https://picsum.photos/seed/students1/1000/1250" alt="With students from the coding class">
+          <p class="lightbox-caption">With the students</p>
+          <a href="#gallery" class="lightbox-close" aria-label="Close image">&times;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Grace Temitayo Olorunfemi</span>
+    <span>Built with HTML and CSS</span>
+  </footer>
+</body>
+</html>

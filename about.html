@@ -5,38 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="About Grace Temitayo Olorunfemi, a Computer Engineering student and technology builder.">
   <link rel="icon" type="image/png" href="assets/images/grace.png">
-    <link rel="icon" type="image/png" href="assets/images/grace.png">
   <link rel="stylesheet" href="assets/style.css">
   <script src="assets/script.js" defer></script>
   <title>About</title>
 </head>
 <body>
 
-  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <input type="checkbox" id="nav-open" class="nav-open">
 
-  <header class="mobile-header">
-    <a href="index.html" class="mobile-brand">Grace</a>
-    <label for="menu-toggle" class="menu-button" aria-label="Toggle navigation" aria-controls="site-navigation">
+  <header class="phone-bar">
+    <a href="index.html" class="phone-brand">Grace</a>
+    <label for="nav-open" class="ham" aria-label="Toggle navigation" aria-controls="primary-nav">
       <span></span><span></span><span></span>
     </label>
   </header>
 
-  <aside class="sidebar">
-    <div class="sidebar-top">
-      <nav id="site-navigation" class="nav" aria-label="Main navigation">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link active">About me</a>
-        <a href="education.html" class="nav-link">Education</a>
-        <a href="skills.html" class="nav-link">Skills</a>
-        <a href="projects.html" class="nav-link">Projects</a>
-        <a href="gallery.html" class="nav-link">Gallery</a>
-        <a href="hobbies.html" class="nav-link">Hobbies</a>
-        <a href="cv.html" class="nav-link">CV</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+  <aside class="side-nav">
+    <div class="side-nav-top">
+      <nav id="primary-nav" class="links" aria-label="Main navigation">
+        <a href="index.html" class="link">Home</a>
+        <a href="about.html" class="link active">About me</a>
+        <a href="education.html" class="link">Education</a>
+        <a href="skills.html" class="link">Skills</a>
+        <a href="projects.html" class="link">Projects</a>
+        <a href="gallery.html" class="link">Gallery</a>
+        <a href="hobbies.html" class="link">Hobbies</a>
+        <a href="cv.html" class="link">CV</a>
+        <a href="contact.html" class="link">Contact</a>
       </nav>
     </div>
-    <div class="sidebar-bottom">
-      <div class="socials">
+    <div class="side-nav-base">
+      <div class="peer-links">
         <a href="#" aria-label="GitHub profile">GitHub</a>
         <a href="#" aria-label="LinkedIn profile">LinkedIn</a>
         <a href="mailto:graceolorunfemi96@gmail.com" aria-label="Email Grace">Email</a>
@@ -44,20 +43,20 @@
     </div>
   </aside>
 
-  <main id="main-content" class="main-content">
-    <section id="about" class="section page-section">
-      <div class="section-heading">
-        <h2 class="eyebrow">About</h2>
+  <main id="main" class="main">
+    <section id="about" class="wrap page-block">
+      <div class="head-block">
+        <h2 class="overline">About</h2>
         <h1>Turning ideas into useful technology.</h1>
       </div>
-      <div class="about-grid">
+      <div class="split-2">
         <p>I am a Computer Engineering student and technology builder interested in artificial intelligence, embedded systems, software development and practical engineering solutions.</p>
         <p>I enjoy working across hardware and software, from developing responsive interfaces and APIs to integrating cameras, sensors, edge AI and embedded hardware into real-world products.</p>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="foot">
     <span>© 2026 Grace Temitayo Olorunfemi</span>
     <span>Built with HTML, CSS and JavaScript</span>
   </footer>

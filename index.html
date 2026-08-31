@@ -11,30 +11,31 @@
 </head>
 <body>
 
-  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <input type="checkbox" id="nav-open" class="nav-open">
 
-  <header class="mobile-header">
-    <a href="index.html" class="mobile-brand">Grace</a>
-    <label for="menu-toggle" class="menu-button" aria-label="Toggle navigation" aria-controls="site-navigation">
+  <header class="phone-bar">
+    <a href="index.html" class="phone-brand">Grace</a>
+    <label for="nav-open" class="ham" aria-label="Toggle navigation" aria-controls="primary-nav">
       <span></span><span></span><span></span>
     </label>
   </header>
-  <aside class="sidebar">
-    <div class="sidebar-top">
-      <nav id="site-navigation" class="nav" aria-label="Main navigation">
-        <a href="index.html" class="nav-link active">Home</a>
-        <a href="about.html" class="nav-link">About me</a>
-        <a href="education.html" class="nav-link">Education</a>
-        <a href="skills.html" class="nav-link">Skills</a>
-        <a href="projects.html" class="nav-link">Projects</a>
-        <a href="gallery.html" class="nav-link">Gallery</a>
-        <a href="hobbies.html" class="nav-link">Hobbies</a>
-        <a href="cv.html" class="nav-link">CV</a>
-        <a href="contact.html" class="nav-link">Contact</a>
+
+  <aside class="side-nav">
+    <div class="side-nav-top">
+      <nav id="primary-nav" class="links" aria-label="Main navigation">
+        <a href="index.html" class="link active">Home</a>
+        <a href="about.html" class="link">About me</a>
+        <a href="education.html" class="link">Education</a>
+        <a href="skills.html" class="link">Skills</a>
+        <a href="projects.html" class="link">Projects</a>
+        <a href="gallery.html" class="link">Gallery</a>
+        <a href="hobbies.html" class="link">Hobbies</a>
+        <a href="cv.html" class="link">CV</a>
+        <a href="contact.html" class="link">Contact</a>
       </nav>
     </div>
-    <div class="sidebar-bottom">
-      <div class="socials">
+    <div class="side-nav-base">
+      <div class="peer-links">
         <a href="#" aria-label="GitHub profile">GitHub</a>
         <a href="#" aria-label="LinkedIn profile">LinkedIn</a>
         <a href="mailto:graceolorunfemi96@gmail.com" aria-label="Email Grace">Email</a>
@@ -42,28 +43,27 @@
     </div>
   </aside>
 
-  <main id="main-content" class="main-content">
-    <section id="home" class="hero section1">
-      <div class="hero-copy">
-        <p class="hero-kicker">Computer Engineering</p>
+  <main id="main" class="main">
+    <section id="landing" class="splash wrap-tight">
+      <div class="splash-text">
+        <p class="splash-label">Computer Engineering</p>
         <h1>Grace Temitayo <span>Olorunfemi</span></h1>
-        <p class="hero-role">I build practical technology at the intersection of embedded systems, computer vision, artificial intelligence, and software development.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="projects.html">View projects</a>
-          <a class="button button-outline" href="/assets/documents/Grace.pdf" target="_blank">View CV</a>
+        <p class="splash-bio">I build practical technology at the intersection of embedded systems, computer vision, artificial intelligence, and software development.</p>
+        <div class="splash-cta">
+          <a class="btn btn-solid" href="projects.html">View projects</a>
+          <a class="btn btn-ghost" href="/assets/documents/Grace.pdf" target="_blank">View CV</a>
         </div>
-        <div class="skill-pills" aria-label="Core skills">
+        <div class="chips" aria-label="Core skills">
           <span>C / C++</span><span>Embedded systems</span><span>Edge AI</span><span>Web development</span>
         </div>
       </div>
-        <div class="hero-image-frame">
-          <img src="assets/images/grace.png" alt="Portrait of Grace Temitayo Olorunfemi" class="hero-image">
-        </div>
-
+      <div class="photo-ring">
+        <img src="assets/images/grace.png" alt="Portrait of Grace Temitayo Olorunfemi" class="photo">
+      </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="foot">
     <span>© 2026 Grace Temitayo Olorunfemi</span>
   </footer>
 </body>
